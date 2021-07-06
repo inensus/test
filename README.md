@@ -4,7 +4,17 @@ Hi! Are you ready to join our team working on an innovative and exciting project
 
 For the test assignment, we would like you to create a basic **transaction processing unit** that is responsible to cover different types of debts and generating energy. 
 
-**Helpful notes:**
+### How to prioritize payments?
+
+The transaction processor prioritizes different types of payments as following;
+1- Covering appliance rate debts
+2- Covering tariff fixed costs
+3- Generating electricty with the rest amount
+
+
+### Helpful notes:
+We love the `Service Layer` and `testing`, so don't hesitate to use it :) .
+
 - If the sent amount can not cover the debts, just pay as much as you can.
 - The energy could be sold as chunks. That means, if the amount can not cover the whole unit; 0.x ( `1<=x<=9` with only one decimal) units could be generated.
 - When the rest amount (after all debts are paid) can not fit 0.x; Please topup the amount to the next 0.x. 
